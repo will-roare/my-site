@@ -24,7 +24,7 @@ jobs:
           SLUG=$(echo "$ISSUE_TITLE" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g; s/^-+|-+$//g')
           DATE=$(date +%Y-%m-%d)
 
-          mkdir -p "my-site/src/content/blog"
+          mkdir -p "src/content/blog"
           {
             echo "---"
             echo "title: '$ISSUE_TITLE'"
